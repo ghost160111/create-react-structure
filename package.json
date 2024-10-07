@@ -4,6 +4,9 @@
   "version": "1.0.1",
   "description": "Script to create react component in more flexible way by separating types, component declaration, styles, constants, utilities into modules.",
   "main": "index.js",
+  "bin": {
+    "create-react-structure": "./index.js"
+  },
   "scripts": {
     "create": "node ./index.js"
   },
