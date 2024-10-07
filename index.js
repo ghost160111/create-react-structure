@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Define the base directory as the project root (assuming script is inside the project folder)
-const projectRoot = path.resolve(__dirname, "./"); // Adjust based on your structure, moves up to the project root
+const projectRoot = path.resolve(__dirname, "../../"); // Adjust based on your structure, moves up to the project root
 
 // Create an interface for getting user input from the terminal
 const rl = readline.createInterface({
