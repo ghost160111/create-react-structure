@@ -1,0 +1,13 @@
+{
+  "name": "create-react-structure",
+  "type": "module",
+  "version": "1.0.1",
+  "description": "Script to create react component in more flexible way by separating types, component declaration, styles, constants, utilities into modules.",
+  "main": "index.js",
+  "scripts": {
+    "create": "node ./index.js"
+  },
+  "keywords": ["react", "react-structure"],
+  "author": "Jaloliddin",
+  "license": "MIT"
+}
