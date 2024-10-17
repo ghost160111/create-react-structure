@@ -70,8 +70,12 @@ test('renders ${baseName} component', () => {
 });
       `,
       [`${baseName}.types.d.ts`]: `
-declare interface ${Props} {}
-declare interface ${State} {}
+declare global {
+  declare interface ${Props} {}
+  declare interface ${State} {}
+}
+
+export {}
       `,
       [`${baseName}.utils.ts`]: `
 // Write utility functions, classes, templates for ${baseName} component...
