@@ -26,11 +26,11 @@ rl.question("Enter the base file name (e.g., ReactComponent): ", (baseName) => {
     return;
   }
 
-  // Ask for the target directory (relative to the project root) or default to the "src" directory
-  rl.question("Enter the target directory relative to project root (start from ./), in case not provided default dir is 'src': ", (directoryPath) => {
+  // Ask for the target directory (relative to the project root) or default to the "src/components" directory
+  rl.question("Enter the target directory relative to project root (start from ./), in case not provided default dir is 'src/components': ", (directoryPath) => {
     const targetDirectory = directoryPath
       ? path.join(projectRoot, directoryPath, baseName)
-      : path.join(projectRoot, 'src', baseName); // Default to src if not provided
+      : path.join(projectRoot, 'src/components', baseName); // Default to src/components if not provided
 
     // Ensure the directory exists or create it
     if (!fs.existsSync(targetDirectory)) {
