@@ -71,8 +71,8 @@ test('renders ${baseName} component', () => {
       `,
       [`${baseName}.types.d.ts`]: `
 declare global {
-  declare interface ${Props} {}
-  declare interface ${State} {}
+  interface ${Props} {}
+  interface ${State} {}
 }
 
 export {}
